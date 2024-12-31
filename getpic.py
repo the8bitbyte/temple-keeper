@@ -19,19 +19,8 @@ def get_user_id(username):
 
 
 def get_roblox_avatar_url(username):
-    """
-    Gets the avatar URL of a Roblox user by username.
-    
-    Args:
-        username (str): The username of the Roblox user.
-    
-    Returns:
-        str: The URL of the avatar picture, or an error message if unsuccessful.
-    """
     try:
-        # Step 1: Get user ID from username
         user_id = get_user_id(username)
-        # Step 2: Get avatar picture URL
         avatar_url = f"https://thumbnails.roblox.com/v1/users/avatar-headshot?userIds={user_id}&size=150x150&format=Png&isCircular=false"
         avatar_response = requests.get(avatar_url)
         avatar_data = avatar_response.json()
