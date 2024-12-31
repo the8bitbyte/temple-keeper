@@ -1,0 +1,15 @@
+!help                  displays the list of commands
+
+!gamecmd               runs a command that makes changes to the game
+   ┃
+   ┣━━━━━━ exp         gives Exp to a specified player
+   ┃
+   ┣━━━━━━ ban         bans a specified player
+   ┃
+   ┣━━━━━━ unban       unbans a specified player
+   ┃
+   ┗━━━━━━ shutdown    closes all running servers
+
+!host                  gives information about the server hosting the bot
+
+!end                   kills the process running the bot
